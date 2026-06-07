@@ -1,0 +1,31 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 20px 50px;
+  z-index: 100;
+  height: auto;
+}
+
+.nav-links {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  color: #fff;
+  height: auto;
+}
+
+.nav-links li {
+  cursor: pointer;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+}

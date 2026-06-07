@@ -1,0 +1,47 @@
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.sky {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.city {
+  position: absolute;
+  bottom: -140px;
+  width: 100%;
+  z-index: 2;
+}
+
+.road {
+  position: absolute;
+  bottom: -100px;
+  width: 100%;
+  z-index: 3;
+}
+
+.truck {
+  position: absolute;
+  bottom: -180px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 4;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 90px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  font-size: 120px;
+  font-weight: 900;
+  color: #fff;
+  white-space: nowrap;
+  font-family: "Tektur", sans-serif;
+}
