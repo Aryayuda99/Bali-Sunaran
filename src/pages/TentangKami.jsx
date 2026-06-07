@@ -1,6 +1,6 @@
 function TentangKami() {
   return (
-    <h1>Area Layanan</h1>
+    <h1>HEHE</h1>
   );
 }
 

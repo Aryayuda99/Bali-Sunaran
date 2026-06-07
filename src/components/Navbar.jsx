@@ -18,7 +18,7 @@ function Navbar() {
     <Link to="/Arealayanan">AreaLayanan</Link>
     </li>
   <li>
-    <Link to="/HubungiKami">HubungiKami</Link>
+    <Link to="/TentangKami">TentangKami</Link>
     </li>
 </ul>
 
