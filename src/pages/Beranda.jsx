@@ -1,4 +1,5 @@
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 import "../css/Beranda.css";
 import mentahan from "../assets/mentahan.png";
 
@@ -48,6 +49,8 @@ function Beranda() {
       <section className="judul">
         <h1>Tentang Kami</h1>
       </section>
+
+      <Footer />
     </>
   );
 }

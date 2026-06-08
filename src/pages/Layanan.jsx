@@ -1,6 +1,13 @@
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 import "../css/Layanan.css"
+
 import mentahan from "../assets/mentahan.png";
+import kuras from "../assets/Kuras Septic Tank ChatGPT Image Jun 8, 2026, 03_27_56 PM.png";
+import limbah from "../assets/Kuras Limbah ChatGPT Image Jun 8, 2026, 04_20_14 PM.png";
+import saluran from "../assets/Atasi Saluran Mampet ChatGPT Image Jun 8, 2026, 04_20_20 PM.png";
+import kloset from "../assets/Atasi Kloset Buntu ChatGPT Image Jun 8, 2026, 04_20_25 PM.png";
+import wastafel from "../assets/Atasi Wastafel Tersumbat ChatGPT Image Jun 8, 2026, 04_20_30 PM.png";
 
 function Layanan() {
   return (
@@ -14,11 +21,10 @@ function Layanan() {
 
     <section className="nama-layanan">
         <div className="layanan-gambar">
-            <img className="mentahan" src={mentahan} alt="gambar" />
+            <img className="mentahan" src={kuras} alt="gambar" />
         </div>
 
         <div className="teks">
-
             <h2>Kuras Septic Tank Penuh</h2>
 
             <p>
@@ -52,7 +58,7 @@ function Layanan() {
 
     <section className="nama-layanan">
         <div className="layanan-gambar">
-            <img className="mentahan" src={mentahan} alt="gambar" />
+            <img className="mentahan" src={limbah} alt="gambar" />
         </div>
 
         <div className="teks">
@@ -89,7 +95,7 @@ function Layanan() {
 
     <section className="nama-layanan">
         <div className="layanan-gambar">
-            <img className="mentahan" src={mentahan} alt="gambar" />
+            <img className="mentahan" src={saluran} alt="gambar" />
         </div>
 
         <div className="teks">
@@ -126,7 +132,7 @@ function Layanan() {
 
     <section className="nama-layanan">
         <div className="layanan-gambar">
-            <img className="mentahan" src={mentahan} alt="gambar" />
+            <img className="mentahan" src={kloset} alt="gambar" />
         </div>
 
         <div className="teks">
@@ -163,7 +169,7 @@ function Layanan() {
 
     <section className="nama-layanan">
         <div className="layanan-gambar">
-            <img className="mentahan" src={mentahan} alt="gambar" />
+            <img className="mentahan" src={wastafel} alt="gambar" />
         </div>
 
         <div className="teks">
@@ -197,7 +203,8 @@ function Layanan() {
     </div>
 
     </section>
-    
+
+    <Footer />
     </>
     
 
