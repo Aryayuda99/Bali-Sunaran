@@ -33,10 +33,59 @@ function Beranda() {
       </section>
 
     <section className= "judul">
+      <div className="why-us">
         <h1>Mengapa Harus Bali Sunaran?</h1>
         <p>Kami berkomitmen memberikan pelayanan terbaik dengan kerja cepat, hasil bersih, dan harga jelas.</p>
         <p>Tim kami siap membantu kebutuhan kuras limbah Anda di seluruh Bali.</p>
-        </section>
+
+        <div className="why-grid">
+        <div className="why-card">
+          <div className="icon">⭐</div>
+
+          <h3>Berpengalaman</h3>
+
+        <p>
+          Tim kami telah berpengalaman menangani berbagai jenis
+          pekerjaan kuras limbah secara aman dan profesional.
+        </p>
+        </div>
+
+      <div className="why-card">
+        <div className="icon">🔧</div>
+
+        <h3>Peralatan Memadai</h3>
+
+        <p>
+          Menggunakan armada dan peralatan modern sehingga
+          proses pekerjaan menjadi lebih cepat dan bersih.
+        </p>
+        </div>
+
+      <div className="why-card">
+        <div className="icon">⚡</div>
+
+        <h3>Respon Cepat</h3>
+
+        <p>
+        Tim siap merespon panggilan dengan cepat dan datang
+        ke lokasi sesuai kebutuhan pelanggan.
+        </p>
+      </div>
+
+      <div className="why-card">
+        <div className="icon">💰</div>
+
+        <h3>Harga Jelas</h3>
+
+        <p>
+        Harga diinformasikan sebelum pekerjaan dimulai
+        sehingga tidak ada biaya tersembunyi.
+      </p>
+      </div>
+      </div>
+
+    </div>
+  </section>
 
       <section className="judul">
         <h1>Layanan Kami</h1>
