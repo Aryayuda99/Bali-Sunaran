@@ -2,7 +2,14 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import "../css/Beranda.css";
 import "../css/BerandaResponsive.css";
+import "../css/LandingPage.css";
+import "../css/LandingPageResponsive.css";
 import { NavLink, Link } from "react-router-dom";
+
+import truck from "../assets/truck parallax.png";
+import sky from "../assets/langit parallax 1.png";
+import city from "../assets/Gedung, rumah, pohon parallax.png";
+import road from "../assets/jalan new parallax.png";
 
 import gambar1 from "../assets/Kuras Limbah ChatGPT Image Jun 8, 2026, 04_20_14 PM.png";
 import gambar2 from "../assets/Kuras Septic Tank ChatGPT Image Jun 8, 2026, 03_27_56 PM.png";
@@ -21,7 +28,16 @@ import om from "../assets/om kd su.png";
 function Beranda() {
   return (
     <>
-      <Navbar />
+      <Navbar transparent />
+
+      <section className="hero">
+        <img className="sky" src={sky} alt="Langit" />
+        <img className="city" src={city} alt="Kota" />
+        <img className="road" src={road} alt="Jalan" />
+        <img className="truck" src={truck} alt="Truk Bali Sunaran" />
+
+        <h1>BALI SUNARAN</h1>
+      </section>
 
 {/* =========================
    Stats informasi

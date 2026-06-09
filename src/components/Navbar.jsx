@@ -2,15 +2,29 @@ import "./Navbar.css";
 import "../css/NavbarResponsive.css";
 import logo from "../assets/bali_sunaran_logo_transparent.png";
 import { NavLink, Link } from "react-router-dom";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function Navbar({ transparent = false }) {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
   const closeMenu = () => setMenuOpen(false);
 
+  useEffect(() => {
+    if (!transparent) return;
+
+    const handleScroll = () => setScrolled(window.scrollY > 40);
+
+    handleScroll();
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [transparent]);
+
+  const transparentClass = transparent && !scrolled ? "navbar transparent" : "navbar";
+
   return (
-    <nav className={`${transparent ? "navbar transparent" : "navbar"}${menuOpen ? " menu-open" : ""}`}>
+    <nav className={`${transparentClass}${menuOpen ? " menu-open" : ""}`}>
       <img className="logo" src={logo} alt="logo" />
 
       <button
