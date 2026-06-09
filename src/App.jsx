@@ -1,7 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import WhatsAppFloat from "./components/WhatsAppFloat";
 
-import LandingPage from "./pages/LandingPage";
 import Beranda from "./pages/Beranda";
 import Layanan from "./pages/Layanan";
 import AreaLayanan from "./pages/AreaLayanan";
@@ -12,7 +11,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<LandingPage />} />
+        <Route path="/" element={<Beranda />} />
         <Route path="/beranda" element={<Beranda />} />
         <Route path="/layanan" element={<Layanan />} />
         <Route path="/arealayanan" element={<AreaLayanan />} />
