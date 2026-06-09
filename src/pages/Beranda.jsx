@@ -1,12 +1,22 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import "../css/Beranda.css";
-import mentahan from "../assets/mentahan.png";
+import { Link } from "react-router-dom";
+
+import gambar1 from "../assets/Kuras Limbah ChatGPT Image Jun 8, 2026, 04_20_14 PM.png";
+import gambar2 from "../assets/Kuras Septic Tank ChatGPT Image Jun 8, 2026, 03_27_56 PM.png";
+import gambar3 from "../assets/Atasi Saluran Mampet ChatGPT Image Jun 8, 2026, 04_20_20 PM.png";
+import gambar4 from "../assets/Atasi Kloset Buntu ChatGPT Image Jun 8, 2026, 04_20_25 PM.png";
+import gambar5 from "../assets/Atasi Wastafel Tersumbat ChatGPT Image Jun 8, 2026, 04_20_30 PM.png";
 
 function Beranda() {
   return (
     <>
       <Navbar />
+
+/* =========================
+   Stats informasi
+========================= */
 
       <section className="stats">
         <div className="container">
@@ -32,71 +42,136 @@ function Beranda() {
         </div>
       </section>
 
-    <section className= "judul">
-      <div className="why-us">
-        <h1>Mengapa Harus Bali Sunaran?</h1>
-        <p>Kami berkomitmen memberikan pelayanan terbaik dengan kerja cepat, hasil bersih, dan harga jelas.</p>
-        <p>Tim kami siap membantu kebutuhan kuras limbah Anda di seluruh Bali.</p>
+/* ===============================================================================
+                              Mengapa Harus Bali Sunaran
+================================================================================== */
 
-        <div className="why-grid">
-        <div className="why-card">
-          <div className="icon">⭐</div>
+      <section className="why-us">
+        <div className="container">
+          <h1>Mengapa Harus Bali Sunaran?</h1>
 
-          <h3>Berpengalaman</h3>
+          <p>
+            Kami berkomitmen memberikan pelayanan terbaik dengan kerja cepat,
+            hasil bersih, dan harga jelas.
+          </p>
 
-        <p>
-          Tim kami telah berpengalaman menangani berbagai jenis
-          pekerjaan kuras limbah secara aman dan profesional.
-        </p>
+          <p>
+            Tim kami siap membantu kebutuhan kuras limbah Anda di seluruh Bali.
+          </p>
+
+          <div className="why-grid">
+            <div className="why-card">
+              <div className="icon">⭐</div>
+
+              <h3>Berpengalaman</h3>
+
+              <p>
+                Tim kami telah berpengalaman menangani berbagai jenis pekerjaan
+                kuras limbah secara aman dan profesional.
+              </p>
+            </div>
+
+            <div className="why-card">
+              <div className="icon">🔧</div>
+
+              <h3>Peralatan Memadai</h3>
+
+              <p>
+                Menggunakan armada dan peralatan modern sehingga proses
+                pekerjaan menjadi lebih cepat dan bersih.
+              </p>
+            </div>
+
+            <div className="why-card">
+              <div className="icon">⚡</div>
+
+              <h3>Respon Cepat</h3>
+
+              <p>
+                Tim siap merespon panggilan dengan cepat dan datang ke lokasi
+                sesuai kebutuhan pelanggan.
+              </p>
+            </div>
+
+            <div className="why-card">
+              <div className="icon">💰</div>
+
+              <h3>Harga Jelas</h3>
+
+              <p>
+                Harga diinformasikan sebelum pekerjaan dimulai sehingga tidak
+                ada biaya tersembunyi.
+              </p>
+            </div>
+          </div>
         </div>
-
-      <div className="why-card">
-        <div className="icon">🔧</div>
-
-        <h3>Peralatan Memadai</h3>
-
-        <p>
-          Menggunakan armada dan peralatan modern sehingga
-          proses pekerjaan menjadi lebih cepat dan bersih.
-        </p>
-        </div>
-
-      <div className="why-card">
-        <div className="icon">⚡</div>
-
-        <h3>Respon Cepat</h3>
-
-        <p>
-        Tim siap merespon panggilan dengan cepat dan datang
-        ke lokasi sesuai kebutuhan pelanggan.
-        </p>
-      </div>
-
-      <div className="why-card">
-        <div className="icon">💰</div>
-
-        <h3>Harga Jelas</h3>
-
-        <p>
-        Harga diinformasikan sebelum pekerjaan dimulai
-        sehingga tidak ada biaya tersembunyi.
-      </p>
-      </div>
-      </div>
-
-    </div>
-  </section>
-
-      <section className="judul">
-        <h1>Layanan Kami</h1>
       </section>
 
-      <section className="judul">
-        <h1>Testimoni Pelanggan</h1>
+/* ===============================================================================
+                              Layanan Kami
+================================================================================== */
+
+      <section className="layanan">
+        <div className="container">
+          <h1>Layanan Kami</h1>
+
+          <div className="layanan-grid">
+            <Link to="/layanan" className="layanan-link">
+            <div className="layanan-card">
+              <img src={gambar1} alt="Kuras Limbah" />
+              <h3>Kuras Limbah</h3>
+            </div>
+            </Link>
+
+            <div className="layanan-card">
+              <Link to="/layanan" className="layanan-link">
+              <img src={gambar2} alt="Kuras Septic Tank" />
+              <h3>Kuras Septic Tank</h3>
+              </Link>
+            </div>
+
+            <div className="layanan-card">
+              <Link to="/layanan" className="layanan-link">
+              <img src={gambar3} alt="Saluran Mampet" />
+              <h3>Mengatasi Saluran Mampet</h3>
+              </Link>
+            </div>
+
+            <div className="layanan-card">
+              <Link to="/layanan" className="layanan-link">
+              <img src={gambar4} alt="WC Buntu" />
+              <h3>Mengatasi Closet / WC Buntu</h3>
+              </Link>
+            </div>
+
+            <div className="layanan-card">
+              <Link to="/layanan" className="layanan-link">
+              <img src={gambar5} alt="Grease Trap" />
+              <h3>Mengatasi Wastafel Tersumbat</h3>
+              </Link>
+            </div>
+          </div>
+        </div>
       </section>
 
-      <section className="judul">
-        <h1>Tentang Kami</h1>
+/* ===============================================================================
+                              Testimoni
+================================================================================== */
+
+      <section className="testimoni">
+        <div className="container">
+          <h1>Testimoni Pelanggan</h1>
+        </div>
+      </section>
+
+      /* ===============================================================================
+                              Tentang Kami
+================================================================================== */
+
+      <section className="tentang">
+        <div className="container">
+          <h1>Tentang Kami</h1>
+        </div>
       </section>
 
       <Footer />
