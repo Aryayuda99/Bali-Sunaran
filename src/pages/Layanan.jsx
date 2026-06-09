@@ -14,10 +14,10 @@ function Layanan() {
     <>
     <Navbar />
 
-    <section className="judul">
+      <section className="layanan">
         <h2>Layanan Kami</h2>
         <h1>Bali Sunaran</h1>
-    </section>
+      </section>
 
     <section className="nama-layanan">
         <div className="layanan-gambar">

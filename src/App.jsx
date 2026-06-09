@@ -14,9 +14,9 @@ function App() {
         <Route path="/" element={<LandingPage />} />
         <Route path="/beranda" element={<Beranda />} />
         <Route path="/layanan" element={<Layanan />} />
-        <Route path="/area-layanan" element={<AreaLayanan />} />
-        <Route path="/tentang-kami" element={<TentangKami />} />
-        <Route path="/tentang-kami" element={<HubungiKami />} />
+        <Route path="/arealayanan" element={<AreaLayanan />} />
+        <Route path="/tentangkami" element={<TentangKami />} />
+        <Route path="/hubungikami" element={<HubungiKami />} />
       </Routes>
     </BrowserRouter>
   );

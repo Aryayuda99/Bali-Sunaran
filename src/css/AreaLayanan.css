@@ -1,0 +1,74 @@
+.layanan {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+
+  padding-top: 120px;
+  padding-bottom: 100px;
+
+  text-align: center;
+}
+
+.layanan h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.layanan h1 {
+  font-size: 55px;
+  font-weight: 800;
+  margin-bottom: 25px;
+}
+
+.area-deskripsi {
+  max-width: 850px;
+  margin: auto;
+
+  line-height: 1.8;
+  color: #555;
+}
+
+.area-grid {
+  margin-top: 70px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}
+
+.area-card {
+  background: white;
+
+  border: 2px solid #333;
+  border-radius: 20px;
+
+  padding: 30px 20px;
+
+  min-height: 320px;
+
+  transition: 0.3s;
+}
+
+.area-card:hover {
+  transform: translateY(-8px);
+}
+
+.area-card h3 {
+  font-size: 36px;
+  font-weight: 800;
+
+  margin-bottom: 30px;
+}
+
+.area-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.area-card li {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #444;
+}
