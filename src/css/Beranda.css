@@ -162,15 +162,97 @@
 /* =========================
    Testimoni
 ========================= */
-
 .testimoni {
   padding: 100px 0;
-  text-align: center;
 }
 
 .testimoni h1 {
+  text-align: center;
   font-size: 50px;
   font-weight: 800;
+  margin-bottom: 60px;
+}
+
+.testimoni-grid {
+  display: flex;
+  gap: 30px;
+
+  overflow-x: auto;
+  scroll-behavior: smooth;
+
+  padding-bottom: 30px;
+}
+
+.testimoni-grid::-webkit-scrollbar {
+  height: 15px;
+}
+
+.testimoni-grid::-webkit-scrollbar-track {
+  background: #eee;
+  border-radius: 10px;
+}
+
+.testimoni-grid::-webkit-scrollbar-thumb {
+  background: #2E3D94;
+  border-radius: 10px;
+}
+
+.testimoni-card {
+  min-width: 400px;
+  max-width: 400px;
+
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 20px;
+
+  padding: 35px;
+
+  text-align: center;
+
+  flex-shrink: 0;
+
+  transition: 0.3s;
+}
+
+.testimoni-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.testimoni-card img {
+  width: 80px;
+  height: 80px;
+
+  object-fit: cover;
+  border-radius: 50%;
+
+  margin-bottom: 15px;
+}
+
+.testimoni-card h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.testimoni-card span {
+  font-size: 14px;
+  color: #666;
+}
+
+.testimoni-card p {
+  margin-top: 25px;
+  line-height: 1.8;
+  color: #555;
+}
+
+.quote {
+  font-size: 40px;
+  color: #2E3D94;
+  margin-top: 20px;
+}
+
+.slider-dot {
+  display: none;
 }
 
 /* =========================

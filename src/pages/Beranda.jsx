@@ -9,6 +9,12 @@ import gambar3 from "../assets/Atasi Saluran Mampet ChatGPT Image Jun 8, 2026, 0
 import gambar4 from "../assets/Atasi Kloset Buntu ChatGPT Image Jun 8, 2026, 04_20_25 PM.png";
 import gambar5 from "../assets/Atasi Wastafel Tersumbat ChatGPT Image Jun 8, 2026, 04_20_30 PM.png";
 
+import foto1 from "../assets/testimoni1.jpeg";
+import foto2 from "../assets/testimoni2.jpeg";
+import foto3 from "../assets/testimoni3.jpeg";
+import foto4 from "../assets/testimoni4.jpeg";
+import foto5 from "../assets/testimoni5.jpeg";
+
 function Beranda() {
   return (
     <>
@@ -159,10 +165,80 @@ function Beranda() {
 ================================================================================== */}
 
       <section className="testimoni">
-        <div className="container">
-          <h1>Testimoni Pelanggan</h1>
-        </div>
-      </section>
+  <div className="container">
+
+    <h1>Testimoni Pelanggan</h1>
+
+    <div className="testimoni-grid">
+
+      <div className="testimoni-card">
+        <img src={foto1} alt="Komang" />
+
+        <h3>Komang's</h3>
+        <span>Denpasar Barat</span>
+
+        <p>
+          "Awalnya WC di rumah buntu dan cukup mengganggu.
+          Setelah menghubungi layanan ini, teknisinya datang
+          cepat dan masalah langsung teratasi."
+        </p>
+
+        <div className="quote">❝</div>
+      </div>
+
+      <div className="testimoni-card">
+        <img src={foto2} alt="pramudya" />
+
+        <h3>Pramudya</h3>
+        <span>Klungkung</span>
+
+        <p>
+          "Sudah beberapa kali menggunakan jasa kuras septic
+          tank di sini. Pelayanannya selalu profesional dan
+          hasilnya memuaskan."
+        </p>
+
+        <div className="quote">❝</div>
+      </div>
+
+      <div className="testimoni-card">
+        <img src={foto3} alt="Putu Emud" />
+
+        <h3>Hason</h3>
+        <span>Denpasar Timur</span>
+
+        <p>
+          "Layanannya cepat dan hasilnya memuaskan."
+        </p>
+
+        <div className="quote">❝</div>
+      </div>
+
+      <div className="testimoni-card">
+        <img src={foto4} alt="Hason" />
+
+        <h3>Tujack</h3>
+        <span>Dalung</span>
+
+        <p>
+          "Responnya dan pelayanannya cepat, septic tank saya penuh. saya call malem hari, malem itu juga dateng. mantep pokoknya."
+        </p>
+
+        <div className="quote">❝</div>
+      </div>
+
+    </div>
+
+    <div className="slider-dot">
+      <span></span>
+      <span className="active"></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+  </div>
+</section>
 
 {/* ===============================================================================
                               Tentang Kami
