@@ -9,7 +9,7 @@ import road from "../assets/jalan new parallax.png";
 function LandingPage() {
   return (
     <>
-      <Navbar />
+      <Navbar transparent />
 
       <section className="hero">
         <img className="sky" src={sky} alt="sky" />

@@ -1,29 +1,34 @@
 import "./Navbar.css";
 import logo from "../assets/bali_sunaran_logo_transparent.png";
-import { Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
-function Navbar() {
+function Navbar({ transparent = false }) {
   return (
-    <nav className="navbar">
-  <img className="logo" src={logo} alt="logo" />
+    <nav className={transparent ? "navbar transparent" : "navbar"}>
+      <img className="logo" src={logo} alt="logo" />
 
-<ul className="nav-links">
-  <li>
-    <Link to="/beranda">Beranda</Link>
-  </li>
-  <li>
-    <Link to="/layanan">Layanan</Link>
-  </li>
-  <li>
-    <Link to="/AreaLayanan">Area Layanan</Link>
-    </li>
-  <li>
-    <Link to="/TentangKami">Tentang Kami</Link>
-    </li>
-</ul>
+      <ul className="nav-links">
+        <li>
+          <NavLink to="/beranda">Beranda</NavLink>
+        </li>
 
-  <button>Hubungi Kami</button>
-</nav>
+        <li>
+          <NavLink to="/layanan">Layanan</NavLink>
+        </li>
+
+        <li>
+          <NavLink to="/arealayanan">Area Layanan</NavLink>
+        </li>
+
+        <li>
+          <NavLink to="/tentangkami">Tentang Kami</NavLink>
+        </li>
+      </ul>
+
+      <Link to="/hubungikami">
+        <button>Hubungi Kami</button>
+      </Link>
+    </nav>
   );
 }
 

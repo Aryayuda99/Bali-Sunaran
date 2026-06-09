@@ -27,7 +27,7 @@ function Footer() {
           <p>
             Bali Sunaran merupakan salah satu jasa kuras limbah yang berada
             di Kota Denpasar, Provinsi Bali. Layanan ini berdiri pada tahun
-            2026 dan melayani seluruh wilayah Bali.
+            2015 dan melayani seluruh wilayah Bali.
           </p>
         </div>
 

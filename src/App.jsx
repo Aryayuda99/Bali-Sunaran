@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import WhatsAppFloat from "./components/WhatsAppFloat";
 
 import LandingPage from "./pages/LandingPage";
 import Beranda from "./pages/Beranda";
@@ -18,6 +19,8 @@ function App() {
         <Route path="/tentangkami" element={<TentangKami />} />
         <Route path="/hubungikami" element={<HubungiKami />} />
       </Routes>
+
+      <WhatsAppFloat />
     </BrowserRouter>
   );
 }

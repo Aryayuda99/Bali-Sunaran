@@ -1,0 +1,69 @@
+.wa-float {
+  position: fixed;
+
+  right: 25px;
+  bottom: 25px;
+
+  width: 70px;
+  height: 70px;
+
+  border-radius: 50%;
+
+  background: #25d366;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-decoration: none;
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+
+  z-index: 9999;
+
+  transition: all 0.3s ease;
+}
+
+.wa-float:hover {
+  transform: scale(1.1);
+}
+
+.wa-float::before {
+  content: "Chat WhatsApp";
+
+  position: absolute;
+
+  right: 85px;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  background: white;
+
+  padding: 10px 15px;
+
+  border-radius: 10px;
+
+  color: #333;
+  font-size: 14px;
+  font-weight: 600;
+
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+
+  opacity: 0;
+  visibility: hidden;
+
+  transition: all 0.3s ease;
+
+  white-space: nowrap;
+}
+
+.wa-float:hover::before {
+  opacity: 1;
+  visibility: visible;
+}
+
+.wa-float img {
+  width: 38px;
+  height: 38px;
+}

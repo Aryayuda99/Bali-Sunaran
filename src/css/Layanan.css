@@ -72,18 +72,32 @@
   margin-top: 40px;
 }
 
-.btn-pesan {
-  background: #4f8cff;
+.tombol-pesan {
+  display: inline-block;
+
+  background: #2E3D94;
   color: white;
-  border: none;
-  padding: 12px 24px;
+
+  text-decoration: none;
+
   border-radius: 10px;
-  cursor: pointer;
+
+  padding: 14px 28px;
+
   font-weight: 600;
+
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.tombol-pesan:hover {
+  background: #576dff;
+  cursor: pointer;
 }
 
 .harga {
   text-align: right;
+  cursor: pointer;
 }
 
 .harga span {
