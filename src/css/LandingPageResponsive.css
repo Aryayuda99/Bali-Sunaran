@@ -60,6 +60,23 @@
     text-align: center;
     white-space: nowrap;
   }
+
+
+  .why-us {
+    padding: 30px 20px;
+  }
+
+  .why-us h1 {
+    font-size: 25px;
+    line-height: 1.1;
+    margin-bottom: 15px;
+  }
+
+  .why-us p {
+    font-size: 12px;
+    line-height: 1.4;
+  }
+
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
