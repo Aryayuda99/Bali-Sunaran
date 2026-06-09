@@ -1,6 +1,7 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import "../css/Layanan.css"
+import "../css/LayananResponsive.css"
 
 import mentahan from "../assets/mentahan.png";
 import kuras from "../assets/Kuras Septic Tank ChatGPT Image Jun 8, 2026, 03_27_56 PM.png";

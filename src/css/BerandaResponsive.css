@@ -1,0 +1,125 @@
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .stats {
+    padding-top: 105px;
+    padding-bottom: 25px;
+  }
+
+  .stats .container {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .kartu-informasi h2 {
+    font-size: 38px;
+    margin-bottom: 5px;
+  }
+
+  .kartu-informasi p {
+    font-size: 17px;
+  }
+
+  .why-us,
+  .layanan {
+    padding-bottom: 55px;
+  }
+
+  .why-us h1,
+  .layanan h1,
+  .testimoni h1,
+  .tentang-kami h1 {
+    font-size: 34px;
+    line-height: 1.2;
+  }
+
+  .why-grid,
+  .layanan-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .why-card {
+    text-align: center;
+  }
+
+  .layanan h1 {
+    margin-bottom: 30px;
+  }
+
+  .layanan-card img {
+    height: 300px;
+  }
+
+  .testimoni,
+  .tentang-kami {
+    padding: 55px 0;
+  }
+
+  .testimoni h1,
+  .tentang-kami h1 {
+    margin-bottom: 35px;
+  }
+
+  .testimoni-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    overflow: visible;
+    gap: 22px;
+  }
+
+  .testimoni-card {
+    min-width: 0;
+    max-width: none;
+    width: 100%;
+    padding: 28px 20px;
+  }
+
+  .tentang-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+  }
+
+  .tentang-foto img {
+    width: 100%;
+    max-width: 340px;
+    height: auto;
+  }
+
+  .tentang-teks p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .stats .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .why-grid,
+  .layanan-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .tentang-content {
+    gap: 40px;
+  }
+
+  .tentang-foto img {
+    width: 320px;
+    height: 430px;
+  }
+
+  .tentang-teks p {
+    font-size: 16px;
+  }
+}

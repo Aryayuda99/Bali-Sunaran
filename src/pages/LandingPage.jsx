@@ -1,5 +1,6 @@
 import Navbar from "../components/Navbar";
 import "../css/LandingPage.css";
+import "../css/LandingPageResponsive.css";
 import "../index.css";
 import truck from "../assets/truck parallax.png";
 import sky from "../assets/langit parallax 1.png";

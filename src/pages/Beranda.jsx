@@ -1,6 +1,7 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import "../css/Beranda.css";
+import "../css/BerandaResponsive.css";
 import { NavLink, Link } from "react-router-dom";
 
 import gambar1 from "../assets/Kuras Limbah ChatGPT Image Jun 8, 2026, 04_20_14 PM.png";

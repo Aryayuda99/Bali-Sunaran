@@ -1,0 +1,42 @@
+@media (max-width: 768px) {
+  .area-layanan {
+    padding-top: 105px;
+    padding-bottom: 55px;
+  }
+
+  .area-layanan h1 {
+    font-size: 40px;
+  }
+
+  .area-deskripsi {
+    font-size: 16px;
+  }
+
+  .area-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+    margin-top: 40px;
+  }
+
+  .area-card {
+    min-height: 0;
+    padding: 26px 18px;
+  }
+
+  .area-card h3 {
+    font-size: 28px;
+    margin-bottom: 22px;
+  }
+
+  .area-card li {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .area-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}

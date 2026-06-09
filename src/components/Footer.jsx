@@ -1,4 +1,5 @@
 import "./Footer.css";
+import "../css/FooterResponsive.css";
 import logo from "../assets/logo.png";
 import { Link } from "react-router-dom";
 import {

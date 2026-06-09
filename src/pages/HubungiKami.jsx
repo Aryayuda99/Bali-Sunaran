@@ -5,6 +5,7 @@ import teknisi from "../assets/om kd su animasi 2.png";
 import ornamen from "../assets/ornamen.png";
 
 import "../css/HubungiKami.css";
+import "../css/HubungiKamiResponsive.css";
 
 function HubungiKami() {
   return (

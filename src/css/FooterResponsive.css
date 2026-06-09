@@ -1,0 +1,71 @@
+@media (max-width: 768px) {
+  footer {
+    margin-top: 60px;
+  }
+
+  .footer-cta {
+    padding: 32px 18px;
+  }
+
+  .footer-cta h2 {
+    font-size: 28px;
+    line-height: 1.25;
+  }
+
+  .footer-main {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 38px 20px;
+    text-align: center;
+  }
+
+  .footer-about,
+  .footer-menu,
+  .footer-kontak {
+    width: 100%;
+  }
+
+  .footer-about img {
+    width: 180px;
+  }
+
+  .footer-about p {
+    margin: auto;
+  }
+
+  .footer-menu h3,
+  .footer-kontak h3 {
+    margin-top: 20px;
+    margin-bottom: 22px;
+  }
+
+  .kontak-item {
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .kontak-item div {
+    min-width: 210px;
+    text-align: left;
+  }
+
+  .footer-bottom {
+    padding: 18px 15px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .footer-cta h2 {
+    font-size: 36px;
+  }
+
+  .footer-main {
+    gap: 35px;
+    padding: 45px 30px;
+  }
+
+  .footer-about img {
+    width: 190px;
+  }
+}

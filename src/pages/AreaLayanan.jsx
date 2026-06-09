@@ -1,4 +1,5 @@
 import "../css/AreaLayanan.css";
+import "../css/AreaLayananResponsive.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
