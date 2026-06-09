@@ -93,7 +93,7 @@ function Footer() {
       </div>
 
       <div className="footer-bottom">
-        <p>Copyright 2026 Bali Sunaran. All Rights Reserved</p>
+        <p>© Copyright 2026 Bali Sunaran. All Rights Reserved</p>
         <p>Dibuat dengan ❤️ oleh Arya Yuda</p>
       </div>
     </footer>
