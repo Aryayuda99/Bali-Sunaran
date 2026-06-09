@@ -35,7 +35,7 @@ function HubungiKami() {
               </p>
 
               <a
-                href="https://wa.me/6281353217373"
+                href="https://wa.me/6281934362988"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-whatsapp"

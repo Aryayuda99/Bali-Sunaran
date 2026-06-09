@@ -1,12 +1,19 @@
 @media (max-width: 768px) {
   .tentang-kami {
-    padding-top: 105px;
-    padding-bottom: 55px;
+    padding-top: 100px !important;
+    padding-bottom: 22px !important;
   }
 
-  .tentang-kami h1 {
-    font-size: 40px;
-    margin-bottom: 40px;
+.tentang-kami h1 {
+    margin-bottom: 10;
+    font-size: clamp(28px, 9vw, 36px);
+    line-height: 1.1;
+    white-space: nowrap;
+  }
+
+.tentang-kami h2 {
+    font-size: 18px;
+    margin-bottom: 8px;
   }
 
   .tentang-content {

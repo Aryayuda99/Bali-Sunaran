@@ -1,12 +1,12 @@
 @media (max-width: 768px) {
   section.layanan {
-    padding-top: 95px;
-    padding-bottom: 12px;
+    padding-top: 100px !important;
+    padding-bottom: 22px !important;
   }
 
   section.layanan h2 {
     font-size: 18px;
-    margin-bottom: 40px;
+    margin-bottom: 8px;
   }
 
   section.layanan h1 {

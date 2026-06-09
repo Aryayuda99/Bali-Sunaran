@@ -71,7 +71,7 @@ function Footer() {
 
             <div>
               <h4>Telepon</h4>
-              <p>081353217373</p>
+              <p>081934362988</p>
             </div>
           </div>
 
