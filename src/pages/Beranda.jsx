@@ -23,7 +23,7 @@ import foto3 from "../assets/testimoni3.jpeg";
 import foto4 from "../assets/testimoni4.jpeg";
 import foto5 from "../assets/testimoni5.jpeg";
 
-import om from "../assets/om kd su.png";
+import om from "../assets/om kd su new.png";
 
 function Beranda() {
   return (
@@ -279,28 +279,19 @@ function Beranda() {
 
       <div className="tentang-teks">
         <p>
-          Bali Sunaran adalah penyedia jasa kuras limbah dan sedot WC di Bali.
-          Kami melayani rumah, villa, restoran, hotel, dan berbagai tempat usaha.
-          Tim kami bekerja dengan peralatan yang memadai untuk memastikan proses
-          kuras limbah berjalan cepat dan bersih.
+          Bali Sunaran adalah penyedia jasa kuras limbah dan sedot WC yang 
+          melayani berbagai wilayah di Bali. Kami membantu kebutuhan rumah, 
+          villa, hotel, restoran, kantor, dan berbagai jenis usaha dengan 
+          pelayanan yang cepat, bersih, dan profesional.
         </p>
 
         <p>
-          Kami memiliki pengalaman dalam menangani berbagai jenis limbah.
-          Setiap pekerjaan dilakukan dengan cara yang aman dan rapi.
-          Kepuasan pelanggan menjadi fokus utama dalam setiap layanan yang kami berikan.
+          Didukung oleh tim berpengalaman serta peralatan yang memadai, 
+          kami siap menangani kuras septic tank, kuras limbah, saluran mampet, 
+          dan berbagai kebutuhan sanitasi lainnya. Kepuasan pelanggan menjadi 
+          prioritas utama dalam setiap pekerjaan yang kami lakukan.
         </p>
 
-        <p>
-          Bali Sunaran melayani berbagai wilayah di Bali.
-          Tim kami siap membantu kebutuhan kuras septic tank,
-          pembersihan saluran mampet, dan penanganan limbah lainnya.
-        </p>
-
-        <p>
-          Kami berkomitmen memberikan layanan yang cepat,
-          harga yang jelas, dan hasil kerja yang maksimal untuk setiap pelanggan.
-        </p>
       </div>
 
     </div>

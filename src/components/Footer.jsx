@@ -62,7 +62,7 @@ function Footer() {
 
             <div>
               <h4>Email</h4>
-              <p>balisunaran@yahoo.com</p>
+              <p>balisunaran201@gmail.com</p>
             </div>
           </div>
 

@@ -3,7 +3,7 @@ import "../css/TentangKamiResponsive.css"
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
-import om from "../assets/om kd su.png";
+import om from "../assets/om kd su new.png";
 
 function TentangKami() {
   return (
@@ -27,28 +27,22 @@ function TentangKami() {
       
             <div className="tentang-teks">
               <p>
-                Bali Sunaran adalah penyedia jasa kuras limbah dan sedot WC di Bali.
-                Kami melayani rumah, villa, restoran, hotel, dan berbagai tempat usaha.
-                Tim kami bekerja dengan peralatan yang memadai untuk memastikan proses
-                kuras limbah berjalan cepat dan bersih.
+                Bali Sunaran adalah penyedia jasa kuras limbah dan sedot WC yang melayani berbagai wilayah di Bali. 
+                Kami membantu kebutuhan rumah, villa, hotel, restoran, kantor, dan berbagai tempat usaha dengan pelayanan 
+                yang cepat, bersih, dan profesional.
               </p>
       
               <p>
-                Kami memiliki pengalaman dalam menangani berbagai jenis limbah.
-                Setiap pekerjaan dilakukan dengan cara yang aman dan rapi.
-                Kepuasan pelanggan menjadi fokus utama dalam setiap layanan yang kami berikan.
+                Didukung oleh tim yang berpengalaman serta peralatan yang memadai, kami siap menangani kuras septic tank, 
+                kuras limbah, saluran mampet, kloset buntu, dan berbagai kebutuhan sanitasi lainnya. Setiap pekerjaan 
+                dilakukan dengan mengutamakan kualitas, keamanan, dan kepuasan pelanggan.
               </p>
-      
+
               <p>
-                Bali Sunaran melayani berbagai wilayah di Bali.
-                Tim kami siap membantu kebutuhan kuras septic tank,
-                pembersihan saluran mampet, dan penanganan limbah lainnya.
+                Dengan komitmen pada pelayanan yang responsif, harga yang jelas, dan hasil kerja yang maksimal, Bali Sunaran 
+                terus berupaya menjadi mitra terpercaya bagi masyarakat dan pelaku usaha di seluruh Bali.
               </p>
-      
-              <p>
-                Kami berkomitmen memberikan layanan yang cepat,
-                harga yang jelas, dan hasil kerja yang maksimal untuk setiap pelanggan.
-              </p>
+    
             </div>
       
           </div>
