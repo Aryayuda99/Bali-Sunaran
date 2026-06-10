@@ -3,6 +3,8 @@ import Footer from "../components/Footer";
 import "../css/Layanan.css"
 import "../css/LayananResponsive.css"
 
+import { Link } from "react-router-dom";
+
 import mentahan from "../assets/mentahan.png";
 import kuras from "../assets/Kuras Septic Tank ChatGPT Image Jun 8, 2026, 03_27_56 PM.png";
 import limbah from "../assets/Kuras Limbah ChatGPT Image Jun 8, 2026, 04_20_14 PM.png";
@@ -43,9 +45,11 @@ function Layanan() {
             </p>
 
             <div className="layanan-footer">
+                <Link to="/hubungikami">
                 <button className="tombol-pesan">
                     Pesan Sekarang
                 </button>
+                </Link>
 
             <div className="harga">
                 <span>Harga mulai dari</span>
@@ -80,9 +84,11 @@ function Layanan() {
             </p>
 
             <div className="layanan-footer">
+                <Link to="/hubungikami">
                 <button className="tombol-pesan">
                     Pesan Sekarang
                 </button>
+                </Link>
 
             <div className="harga">
                 <span>Harga mulai dari</span>
@@ -117,9 +123,11 @@ function Layanan() {
             </p>
 
             <div className="layanan-footer">
+                <Link to="/hubungikami">
                 <button className="tombol-pesan">
                     Pesan Sekarang
                 </button>
+                </Link>
 
             <div className="harga">
                 <span>Harga mulai dari</span>
@@ -154,9 +162,11 @@ function Layanan() {
             </p>
 
             <div className="layanan-footer">
+                <Link to="/hubungikami">
                 <button className="tombol-pesan">
                     Pesan Sekarang
                 </button>
+                </Link>
 
             <div className="harga">
                 <span>Harga mulai dari</span>
@@ -191,9 +201,11 @@ function Layanan() {
             </p>
 
             <div className="layanan-footer">
+                <Link to="/hubungikami">
                 <button className="tombol-pesan">
                     Pesan Sekarang
                 </button>
+                </Link>
 
             <div className="harga">
                 <span>Harga mulai dari</span>

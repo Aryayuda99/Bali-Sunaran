@@ -306,6 +306,7 @@
 
 .tentang-teks {
   max-width: 650px;
+  padding-top: 120px;
 }
 
 .tentang-teks p {
@@ -313,7 +314,7 @@
   line-height: 1.9;
   color: #333;
   text-align: left;
-  margin-top: 60px;
+  margin-top: 40px;
 
   margin-bottom: 30px;
 }
