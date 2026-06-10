@@ -55,12 +55,13 @@
   font-size: 16px;
 }
 
-.tentang-teks {
+.tentang-teks2 {
   max-width: 650px;
-  margin-top: -50px;
+  margin-top: 60px;
+  text-align: left;
 }
 
-.tentang-teks p {
+.tentang-teks2 p {
   font-size: 17px;
   color: #333;
 

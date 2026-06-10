@@ -25,7 +25,7 @@ function TentangKami() {
               <span>Founder Bali Sunaran</span>
             </div>
       
-            <div className="tentang-teks">
+            <div className="tentang-teks2">
               <p>
                 Bali Sunaran adalah penyedia jasa kuras limbah dan sedot WC yang melayani berbagai wilayah di Bali. 
                 Kami membantu kebutuhan rumah, villa, hotel, restoran, kantor, dan berbagai tempat usaha dengan pelayanan 
