@@ -6,10 +6,7 @@ import "../css/LandingPage.css";
 import "../css/LandingPageResponsive.css";
 import { NavLink, Link } from "react-router-dom";
 
-import truck from "../assets/truck parallax.png";
-import sky from "../assets/langit parallax 1.png";
-import city from "../assets/Gedung, rumah, pohon parallax.png";
-import road from "../assets/jalan new parallax.png";
+import truk from "../assets/truk new.png";
 
 import gambar1 from "../assets/Kuras Limbah ChatGPT Image Jun 8, 2026, 04_20_14 PM.png";
 import gambar2 from "../assets/Kuras Septic Tank ChatGPT Image Jun 8, 2026, 03_27_56 PM.png";
@@ -28,15 +25,34 @@ import om from "../assets/om kd su new.png";
 function Beranda() {
   return (
     <>
-      <Navbar transparent />
+      <Navbar/>
 
       <section className="hero">
-        <img className="sky" src={sky} alt="Langit" />
-        <img className="city" src={city} alt="Kota" />
-        <img className="road" src={road} alt="Jalan" />
-        <img className="truck" src={truck} alt="Truk Bali Sunaran" />
+        <div className="hero-kiri">
+          <h1>BALI SUNARAN.</h1>
 
-        <h1>BALI SUNARAN</h1>
+          <p>Setiap saluran yang lancar adalah bagian dari kenyamanan 
+          sehari-hari. Kami hadir untuk memberikan 
+          solusi yang cepat dan tepat.
+          </p>
+
+          <div className="btn">
+            <button className="btn-eksplorasi">
+              Eksplorasi
+            </button>
+
+            <button className="btn-hubungi">
+              Hubungi Kami
+            </button>
+            </div>
+        </div>
+
+        <div className="hero-kanan">
+        <img src={truk} alt="truk" />
+        </div>
+
+
+        
       </section>
 
 {/* =========================

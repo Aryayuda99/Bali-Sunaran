@@ -9,7 +9,7 @@
 ========================= */
 
 .stats {
-  padding-top: 120px;
+  padding-top: 20px;
   padding-bottom: 40px;
 }
 
@@ -27,8 +27,9 @@
 .kartu-informasi h2 {
   font-size: 48px;
   font-weight: 800;
-  color: #2E3D94;
+  color: #000000;
   margin-bottom: 10px;
+  font-family: "Playfair Display", serif;
 }
 
 .kartu-informasi p {
@@ -42,19 +43,24 @@
 
 .why-us {
   text-align: center;
-  padding-top: 0;
+  padding-top: 30px;
   padding-bottom: 50px;
 }
 
 .why-us h1 {
-  font-size: 50px;
+  font-size: 55px;
   font-weight: 800;
   margin-bottom: 20px;
+  font-family: "Playfair Display", serif;
+  letter-spacing: 5%;
+  padding-bottom: 5px;
+  color: #2E3E97;
 }
 
 .why-us p {
-  color: #666;
+  color: #505050;
   margin-bottom: 5px;
+  font-size: 15px;
 }
 
 .why-grid {
@@ -69,8 +75,8 @@
 .why-card {
   background: linear-gradient(
     135deg,
-    #4a86e8,
-    #2f6fd8
+    #2E3E97,
+    #2E3E97
   );
 
   color: white;
