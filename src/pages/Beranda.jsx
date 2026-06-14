@@ -23,6 +23,15 @@ import foto5 from "../assets/testimoni5.jpeg";
 import om from "../assets/om kd su new.png";
 
 function Beranda() {
+  const scrollKeWhyUs = () => {
+    const element = document.getElementById("why-us");
+
+    window.scrollTo({
+      top: element.offsetTop - 80,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <>
       <Navbar/>
@@ -37,13 +46,15 @@ function Beranda() {
           </p>
 
           <div className="btn">
-            <button className="btn-eksplorasi">
+            <button className="btn-eksplorasi" onClick={scrollKeWhyUs}>
               Eksplorasi
             </button>
 
+            <Link to="/hubungikami">
             <button className="btn-hubungi">
               Hubungi Kami
             </button>
+            </Link>
             </div>
         </div>
 
@@ -59,7 +70,7 @@ function Beranda() {
    Stats informasi
 ========================= */}
 
-      <section className="stats">
+      <section className="stats"  id="why-us">
         <div className="container">
           <div className="kartu-informasi">
             <h2>999+</h2>
