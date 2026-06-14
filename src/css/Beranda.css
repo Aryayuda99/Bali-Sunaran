@@ -97,16 +97,19 @@
 .icon {
   font-size: 42px;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .why-card h3 {
   font-size: 22px;
   margin-bottom: 15px;
+  text-align: center;
 }
 
 .why-card p {
   color: white;
   line-height: 1.7;
+  text-align: center;
 }
 
 /* =========================
