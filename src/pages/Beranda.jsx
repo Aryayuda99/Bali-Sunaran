@@ -21,13 +21,11 @@ import foto4 from "../assets/testimoni4.jpeg";
 import foto5 from "../assets/testimoni5.jpeg";
 
 import om from "../assets/om kd su new.png";
+import berpengalaman from "../assets/om kd su berpengalaman.png";
+import peralatan from "../assets/om kd su peralatan.png";
+import respon from "../assets/om kd su respon.png";
+import harga from "../assets/om kd su harga.png";
 
-import {
-  ShieldCheck,
-  Truck,
-  Zap,
-  BadgeDollarSign
-} from "lucide-react";
 
 function Beranda() {
   const scrollKeWhyUs = () => {
@@ -120,9 +118,11 @@ function Beranda() {
 
           <div className="why-grid">
             <div className="why-card">
-              <div className="icon">
-                  <ShieldCheck size={40} />
-              </div>
+              <img
+                src={berpengalaman}
+                alt="berpengalaman"
+                className="why-icon"
+              />
 
               <h3>Berpengalaman</h3>
 
@@ -133,9 +133,11 @@ function Beranda() {
             </div>
 
             <div className="why-card">
-              <div className="icon">
-                <Truck size={40} />
-              </div>
+              <img
+                src={peralatan}
+                alt="peralatan"
+                className="why-icon"
+              />
 
               <h3>Peralatan Memadai</h3>
 
@@ -146,9 +148,11 @@ function Beranda() {
             </div>
 
             <div className="why-card">
-              <div className="icon">
-                <Zap size={40} />
-              </div>
+              <img
+                src={respon}
+                alt="respon"
+                className="why-icon"
+              />
 
               <h3>Respon Cepat</h3>
 
@@ -159,9 +163,11 @@ function Beranda() {
             </div>
 
             <div className="why-card">
-              <div className="icon">
-                <BadgeDollarSign size={40} />
-              </div>
+              <img
+                src={harga}
+                alt="harga"
+                className="why-icon"
+              />
 
               <h3>Harga Jelas</h3>
 
