@@ -22,6 +22,13 @@ import foto5 from "../assets/testimoni5.jpeg";
 
 import om from "../assets/om kd su new.png";
 
+import {
+  ShieldCheck,
+  Truck,
+  Zap,
+  BadgeDollarSign
+} from "lucide-react";
+
 function Beranda() {
   const scrollKeWhyUs = () => {
     const element = document.getElementById("why-us");
@@ -113,7 +120,9 @@ function Beranda() {
 
           <div className="why-grid">
             <div className="why-card">
-              <div className="icon">⭐</div>
+              <div className="icon">
+                  <ShieldCheck size={40} />
+              </div>
 
               <h3>Berpengalaman</h3>
 
@@ -124,7 +133,9 @@ function Beranda() {
             </div>
 
             <div className="why-card">
-              <div className="icon">🔧</div>
+              <div className="icon">
+                <Truck size={40} />
+              </div>
 
               <h3>Peralatan Memadai</h3>
 
@@ -135,7 +146,9 @@ function Beranda() {
             </div>
 
             <div className="why-card">
-              <div className="icon">⚡</div>
+              <div className="icon">
+                <Zap size={40} />
+              </div>
 
               <h3>Respon Cepat</h3>
 
@@ -146,7 +159,9 @@ function Beranda() {
             </div>
 
             <div className="why-card">
-              <div className="icon">💰</div>
+              <div className="icon">
+                <BadgeDollarSign size={40} />
+              </div>
 
               <h3>Harga Jelas</h3>
 
