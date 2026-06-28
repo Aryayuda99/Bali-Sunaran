@@ -3,12 +3,24 @@ import "../css/NavbarResponsive.css";
 import logo from "../assets/bali_sunaran_logo_transparent.png";
 import { NavLink, Link } from "react-router-dom";
 import { useEffect, useState } from "react";
+import clickSound from "../assets/Suara klik.mp3";
 
 function Navbar({ transparent = false }) {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
   const closeMenu = () => setMenuOpen(false);
+
+  const playClickSound = () => {
+  const audio = new Audio(clickSound);
+  audio.volume = 0.5;
+  audio.play().catch(() => {});
+};
+
+const handleHubungiClick = () => {
+  playClickSound();
+  closeMenu();
+};
 
   useEffect(() => {
     if (!transparent) return;
@@ -23,6 +35,7 @@ function Navbar({ transparent = false }) {
 
   const transparentClass = transparent && !scrolled ? "navbar transparent" : "navbar";
 
+  
   return (
     <nav className={`${transparentClass}${menuOpen ? " menu-open" : ""}`}>
       <img className="logo" src={logo} alt="logo" />
@@ -57,11 +70,11 @@ function Navbar({ transparent = false }) {
         </li>
 
         <li className="mobile-contact">
-          <NavLink to="/hubungikami" onClick={closeMenu}>Hubungi Kami</NavLink>
+          <NavLink to="/hubungikami" onClick={handleHubungiClick}>Hubungi Kami</NavLink>
         </li>
       </ul>
 
-      <Link to="/hubungikami">
+      <Link to="/hubungikami" onClick={handleHubungiClick}>
         <button>Hubungi Kami</button>
       </Link>
     </nav>

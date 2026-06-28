@@ -7,6 +7,7 @@ import "../css/LandingPageResponsive.css";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import clickSound from "../assets/Suara klik.mp3";
 
 import truk from "../assets/truk new.png";
 
@@ -80,6 +81,12 @@ function Beranda() {
     });
   };
 
+  const playClickSound = () => {
+  const audio = new Audio(clickSound);
+  audio.volume = 0.4;
+  audio.play();
+};
+
   return (
     <>
       <Navbar/>
@@ -99,7 +106,8 @@ function Beranda() {
             </button>
 
             <Link to="/hubungikami">
-            <button className="btn-hubungi">
+            <button className="btn-hubungi"
+            onClick={playClickSound}>
               Hubungi Kami
             </button>
             </Link>
