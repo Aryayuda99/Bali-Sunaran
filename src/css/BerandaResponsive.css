@@ -38,8 +38,7 @@
     line-height: 1.2;
   }
 
-  .why-grid,
-  .layanan-grid {
+  .why-grid {
     grid-template-columns: 1fr;
     gap: 22px;
   }
@@ -55,19 +54,6 @@
 
   .layanan h1 {
     margin-bottom: 30px;
-  }
-
-    .layanan-grid {
-    padding-top: 15px;
-  }
-
-    .layanan-card h3 {
-    margin-top: 8px;
-    margin-bottom: 25px;
-  }
-
-  .layanan-card img {
-    height: 300px;
   }
 
   .testimoni,
@@ -125,8 +111,7 @@
     gap: 30px;
   }
 
-  .why-grid,
-  .layanan-grid {
+  .why-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 

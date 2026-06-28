@@ -143,18 +143,45 @@
 .layanan-grid {
   width: 100%;
 
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-
+  display: flex;
   gap: 30px;
+
+  overflow-x: auto;
+  overflow-y: hidden;
+
+  padding: 15px 0 30px;
+
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.layanan-grid::-webkit-scrollbar {
+  display: none;
+}
+
+.layanan-grid > * {
+  flex: 0 0 calc((100% - 60px) / 3);
+  min-width: 0;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
+.layanan-carousel {
+  position: relative;
 }
 
 .layanan-card {
-  transition: 0.3s;
+  width: 100%;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .layanan-card:hover {
-  transform: translateY(-8px);
+  transform: scale(1.03);
+  box-shadow: 0 16px 35px rgba(0, 0, 0, 0.18);
 }
 
 .layanan-card img {
@@ -176,8 +203,97 @@
 }
 
 .layanan-link {
+  display: block;
   text-decoration: none;
   color: inherit;
+}
+
+.layanan-arrow {
+  position: absolute;
+  top: 48%;
+  z-index: 5;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 46px;
+  height: 46px;
+
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+
+  background: #2E3D94;
+  color: white;
+
+  font-size: 18px;
+  cursor: pointer;
+
+  transform: translateY(-50%);
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease,
+    background 0.25s ease;
+}
+
+.layanan-arrow:hover:not(:disabled) {
+  background: #576dff;
+  transform: translateY(-50%) scale(1.08);
+}
+
+.layanan-arrow:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.layanan-arrow-left {
+  left: -23px;
+}
+
+.layanan-arrow-right {
+  right: -23px;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .layanan-grid > * {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+
+@media (max-width: 768px) {
+  .layanan-grid {
+    gap: 18px;
+    padding-top: 15px;
+  }
+
+  .layanan-grid > * {
+    flex-basis: 100%;
+  }
+
+  .layanan-card h3 {
+    margin-top: 8px;
+    margin-bottom: 25px;
+  }
+
+  .layanan-card img {
+    height: 300px;
+  }
+
+  .layanan-arrow {
+    top: 46%;
+    width: 40px;
+    height: 40px;
+    font-size: 15px;
+  }
+
+  .layanan-arrow-left {
+    left: -8px;
+  }
+
+  .layanan-arrow-right {
+    right: -8px;
+  }
 }
 
 /* =========================

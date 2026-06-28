@@ -4,7 +4,9 @@ import "../css/Beranda.css";
 import "../css/BerandaResponsive.css";
 import "../css/LandingPage.css";
 import "../css/LandingPageResponsive.css";
-import { NavLink, Link } from "react-router-dom";
+import { useCallback, useEffect, useRef, useState } from "react";
+import { Link } from "react-router-dom";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 import truk from "../assets/truk new.png";
 
@@ -28,6 +30,47 @@ import harga from "../assets/om kd su harga.png";
 
 
 function Beranda() {
+  const layananCarouselRef = useRef(null);
+  const [canScrollLeft, setCanScrollLeft] = useState(false);
+  const [canScrollRight, setCanScrollRight] = useState(true);
+
+  const updateCarouselButtons = useCallback(() => {
+    const carousel = layananCarouselRef.current;
+
+    if (!carousel) return;
+
+    const maxScrollLeft = carousel.scrollWidth - carousel.clientWidth;
+
+    setCanScrollLeft(carousel.scrollLeft > 2);
+    setCanScrollRight(carousel.scrollLeft < maxScrollLeft - 2);
+  }, []);
+
+  useEffect(() => {
+    const carousel = layananCarouselRef.current;
+
+    if (!carousel) return;
+
+    updateCarouselButtons();
+    window.addEventListener("resize", updateCarouselButtons);
+
+    return () => window.removeEventListener("resize", updateCarouselButtons);
+  }, [updateCarouselButtons]);
+
+  const scrollLayanan = (direction) => {
+    const carousel = layananCarouselRef.current;
+    const firstCard = carousel?.firstElementChild;
+
+    if (!carousel || !firstCard) return;
+
+    const gap = parseFloat(window.getComputedStyle(carousel).columnGap) || 0;
+    const scrollDistance = firstCard.getBoundingClientRect().width + gap;
+
+    carousel.scrollBy({
+      left: direction * scrollDistance,
+      behavior: "smooth",
+    });
+  };
+
   const scrollKeWhyUs = () => {
     const element = document.getElementById("why-us");
 
@@ -188,41 +231,67 @@ function Beranda() {
         <div className="container">
           <h1>Layanan Kami</h1>
 
-          <div className="layanan-grid">
-            <Link to="/layanan" className="layanan-link">
-            <div className="layanan-card">
-              <img src={gambar1} alt="Kuras Limbah" />
-              <h3>Kuras Limbah</h3>
-            </div>
-            </Link>
+          <div className="layanan-carousel">
+            <button
+              type="button"
+              className="layanan-arrow layanan-arrow-left"
+              aria-label="Layanan sebelumnya"
+              disabled={!canScrollLeft}
+              onClick={() => scrollLayanan(-1)}
+            >
+              <FaChevronLeft />
+            </button>
 
-            <div className="layanan-card">
+            <div
+              className="layanan-grid"
+              ref={layananCarouselRef}
+              onScroll={updateCarouselButtons}
+            >
               <Link to="/layanan" className="layanan-link">
-              <img src={gambar2} alt="Kuras Septic Tank" />
-              <h3>Kuras Septic Tank</h3>
+                <div className="layanan-card">
+                  <img src={gambar1} alt="Kuras Limbah" />
+                  <h3>Kuras Limbah</h3>
+                </div>
               </Link>
+
+              <div className="layanan-card">
+                <Link to="/layanan" className="layanan-link">
+                  <img src={gambar2} alt="Kuras Septic Tank" />
+                  <h3>Kuras Septic Tank</h3>
+                </Link>
+              </div>
+
+              <div className="layanan-card">
+                <Link to="/layanan" className="layanan-link">
+                  <img src={gambar3} alt="Saluran Mampet" />
+                  <h3>Mengatasi Saluran Mampet</h3>
+                </Link>
+              </div>
+
+              <div className="layanan-card">
+                <Link to="/layanan" className="layanan-link">
+                  <img src={gambar4} alt="WC Buntu" />
+                  <h3>Mengatasi Closet / WC Buntu</h3>
+                </Link>
+              </div>
+
+              <div className="layanan-card">
+                <Link to="/layanan" className="layanan-link">
+                  <img src={gambar5} alt="Grease Trap" />
+                  <h3>Mengatasi Wastafel Tersumbat</h3>
+                </Link>
+              </div>
             </div>
 
-            <div className="layanan-card">
-              <Link to="/layanan" className="layanan-link">
-              <img src={gambar3} alt="Saluran Mampet" />
-              <h3>Mengatasi Saluran Mampet</h3>
-              </Link>
-            </div>
-
-            <div className="layanan-card">
-              <Link to="/layanan" className="layanan-link">
-              <img src={gambar4} alt="WC Buntu" />
-              <h3>Mengatasi Closet / WC Buntu</h3>
-              </Link>
-            </div>
-
-            <div className="layanan-card">
-              <Link to="/layanan" className="layanan-link">
-              <img src={gambar5} alt="Grease Trap" />
-              <h3>Mengatasi Wastafel Tersumbat</h3>
-              </Link>
-            </div>
+            <button
+              type="button"
+              className="layanan-arrow layanan-arrow-right"
+              aria-label="Layanan berikutnya"
+              disabled={!canScrollRight}
+              onClick={() => scrollLayanan(1)}
+            >
+              <FaChevronRight />
+            </button>
           </div>
         </div>
       </section>
